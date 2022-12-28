@@ -46,22 +46,37 @@ a {
 
 /*Section one*/
 .hero {
+    height: 150px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    flex-shrink: 0;
+    align-items: stretch;
+    padding-top: 052px;
+    padding-bottom: 50px;
+    color: #f9faf8;
 }
 
+.hero > * {
+    width: 50%;
+}
+
+.hero > div {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
 .hero h1 {
     font-family: "Roboto", sans-serif;
     font-size: 48px;
     font-weight: bolder;
-    color: #f9faf8;
+    margin: 0;
+    line-height: 0.9;
+    
 }
 .hero img {
-    width: 40%;
-    height: 150px;
+    height: auto;
     object-fit: cover;
 }
 
