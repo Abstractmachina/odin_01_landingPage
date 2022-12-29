@@ -3,12 +3,12 @@ body {
     flex-direction: column;
     justify-content: space-between;
     min-height: 100vh;
-
-    border-style: double;
-    border-color: brown;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
 }
+
 body >div {
-    padding: 12px 20%
+    padding: 12px 20%;
 }
 
 .header,.footer, .hero{
@@ -44,16 +44,17 @@ a {
     color: white;
 }
 
-/*Section one*/
+/*hero section*/
 .hero {
-    height: 150px;
+    min-height: 200px;
     display: flex;
     justify-content: space-between;
     flex-shrink: 0;
     align-items: stretch;
-    padding-top: 052px;
+    padding-top: 50px;
     padding-bottom: 50px;
     color: #f9faf8;
+    gap: 12px;
 }
 
 .hero > * {
@@ -61,14 +62,14 @@ a {
 }
 
 .hero > div {
-    padding: 0 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
+    
 }
 .hero h1 {
-    font-family: "Roboto", sans-serif;
+    
     font-size: 48px;
     font-weight: bolder;
     margin: 0;
@@ -86,4 +87,48 @@ button {
     padding: 4px 8px;
     border-radius: 10%;
     color: white;
+}
+
+/*infmration section*/
+
+.informationSection  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.informationSection h2 {
+    font-size: 36px;
+    font-weight:900;
+}
+
+.cardContainer {
+    display: flex;
+flex-wrap: wrap;
+gap: 16px;
+}
+
+.card {
+    width: 150px;
+    text-align: center;
+}
+
+.card img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-color: #3882f6;
+    border-style: solid;
+    border-radius: 10%;
+    border-width: 2px;
+}
+
+
+/*quote section*/
+
+.quoteSection {
+    background-color: #e5e7eb;
+    font-size: 36px;
+    font-style:italic;
+    font-weight: 100;
 }
