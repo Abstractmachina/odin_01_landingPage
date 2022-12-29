@@ -95,6 +95,7 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .informationSection h2 {
@@ -104,18 +105,18 @@ button {
 
 .cardContainer {
     display: flex;
-flex-wrap: wrap;
-gap: 16px;
+    flex-wrap: wrap;
+    gap: 48px;
 }
 
 .card {
-    width: 150px;
+    width: 200px;
     text-align: center;
 }
 
 .card img{
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     border-color: #3882f6;
     border-style: solid;
@@ -131,4 +132,51 @@ gap: 16px;
     font-size: 36px;
     font-style:italic;
     font-weight: 100;
+    
+}
+
+.quoteSection > * {
+    margin: 48px;
+}
+
+.quoteSection div {
+    text-align: right;
+    font-weight: bold;
+}
+
+
+/*call to action*/
+.callToActionSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.callToActionContainer {
+    background-color: #3882f6;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0;
+    padding: 40px 80px;
+    color: white;
+}
+
+.callToActionContainer button {
+    border-color: white;
+    border-style: solid;
+    border-width: 2px;
+    padding: 4px 16px;
+}
+
+
+/*footer*/
+
+.footer{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
 }
